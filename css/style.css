@@ -1,0 +1,90 @@
+/* id="form"
+id="name"
+id="lastName"
+id="sax"
+id="mail"
+id="work"
+id="position"
+id="experience"
+id="wife"
+id="children" */
+
+.wrapper {
+  display: flex;
+  user-select: none;
+}
+
+#leftBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  background-color: turquoise;
+  padding: 20px 0;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+}
+fieldset {
+  padding: 0px;
+  margin: 0;
+}
+p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+}
+input {
+  margin: 1px;
+  border: none;
+  padding: 5px;
+}
+
+#rightBox {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  background-color: wheat;
+  padding: 20px 10px;
+}
+
+#container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  border: 1px solid black;
+}
+
+.container_infoUser {
+  display: flex;
+  border: 1px solid black;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* background-color: tomato; */
+  padding: 5px;
+  margin: 1px;
+}
+.container_infoUser span {
+  color: gray;
+}
+
+#savBn {
+  justify-content: center;
+  align-items: center;
+}
+
+.container_infoUser input {
+  text-align: center;
+  width: 80%;
+  margin: 5px;
+  cursor: pointer;
+}
+.container_infoUser input:hover {
+  background-color: chocolate;
+  transition: 2s;
+}

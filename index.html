@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div><h1>CRUD- операция</h1></div>
+    <div class="wrapper">
+      <div id="leftBox">
+        <h2>Создание</h2>
+        <form action="#" id="form">
+          <fieldset>
+            <legend>Контактная информация</legend>
+            <p>
+              <label for="name">Имя</label>
+              <input type="text" id="name" placeholder="Имя" />
+            </p>
+            <p>
+              <label for="lastName">Фамилия</label
+              ><input type="text" id="lastName" placeholder="Фамилия" />
+            </p>
+            <p>
+              <label for="gender">Пол</label>
+              <select name="gender" id="gender">
+                <option value="Не выбран">Не выбран</option>
+                <option value="Мужской">Мужской</option>
+                <option value="Женский">Женский</option>
+              </select>
+            </p>
+            <p>
+              <label for="mail">Mail</label
+              ><input type="text" id="mail" placeholder="mail" />
+            </p>
+          </fieldset>
+          <fieldset>
+            <legend>Работа и стаж</legend>
+            <p>
+              <label for="work">Работа</label
+              ><input type="text" id="work" placeholder="Место работы" />
+            </p>
+            <p>
+              <label for="position">Должность</label
+              ><input type="text" id="position" placeholder="Должность" />
+            </p>
+            <p>
+              <label for="experience">Опыт</label
+              ><input type="text" id="experience" placeholder="Опыт" />
+            </p>
+          </fieldset>
+          <fieldset>
+            <legend>Семья</legend>
+            <p>
+              <label for="wife">Жена/Муж</label
+              ><input type="text" id="wife" placeholder="Имя" />
+            </p>
+            <p>
+              <label for="children">Дети</label>
+              <select name="children" id="children">
+                <option value="Нет">Нет</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+              </select>
+            </p>
+          </fieldset>
+          <input id="sub" type="submit" />
+          <input type="reset" />
+        </form>
+      </div>
+
+      <!-- Save -->
+      <div id="rightBox">
+        <h2>Сохранение</h2>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
